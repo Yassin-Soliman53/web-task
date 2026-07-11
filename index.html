@@ -174,52 +174,20 @@
 
     
 
-       <script >
-               function toggleSignalMode(){
-        const root = document.documentElement;
-        root.dataset.theme = root.dataset.theme === "light" ? "" : "light";
-    }
-    function updateNavSticky(){
-        const hero = document.getElementById('broadcast');
-        const nav = document.querySelector('.side-navbar');
-        if (!hero || !nav) return;
-
-        const heroHeight = hero.getBoundingClientRect().height;
-        const isNarrow = window.matchMedia('(max-width: 900px)').matches;
-
-        if (isNarrow){
-            nav.classList.toggle('pinned', window.scrollY > 20);
-            return;
-        }
-
-        nav.style.height = heroHeight + 'px';
-        nav.classList.toggle('pinned', window.scrollY > heroHeight - 40);
-    }
-    window.addEventListener('scroll', updateNavSticky, { passive: true });
-    window.addEventListener('resize', updateNavSticky);
-    window.addEventListener('load', updateNavSticky);
-    document.addEventListener('DOMContentLoaded', updateNavSticky);
-           
-       </script>
-    <script type="module" src="firebase.js"></script>
-    <script>
-const music = document.getElementById("bgMusic");
-
-document.addEventListener(
-    "click",
-    () => {
-        music.play().catch(err => console.log(err));
-    },
-    { once: true }
-);
-</script>
 <script>
-    const music = document.getElementById("bgMusic");
+    function toggleSignalMode() {
+    console.log("clicked");
 
-document.addEventListener("click", () => {
-    music.muted = false;
-    music.play();
-}, { once: true });
+    const root = document.documentElement;
+
+    if (root.dataset.theme === "light") {
+        root.dataset.theme = "";
+    } else {
+        root.dataset.theme = "light";
+    }
+
+    console.log(root.dataset.theme);
+}
 </script>
 
     </body>
