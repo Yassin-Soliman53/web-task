@@ -94,7 +94,6 @@ body::after {
     flex-direction: column;
     gap: 2rem;
 }
-
 .nav-links a {
     color: var(--text-muted);
     text-decoration :none;
@@ -102,7 +101,6 @@ body::after {
     font-weight: 750 ;
     transition: color 0.3s ease , padding-left 0.3s ease;
 }
-
 .nav-links a:hover {
     color:var(--text-muted);
     padding-left:10px;
@@ -190,7 +188,6 @@ body::after {
     filter: drop-shadow(0 0 10px var(--neon-pink)) drop-shadow(0 0 18px rgba(0,255,204,0.4));
     animation: fly-across 4.5s cubic-bezier(0.65, 0, 0.35, 1) 1 forwards;
 }
-
 .air-ship .trail {
     transform-origin: right center;
     animation: trail-fade 4.5s ease-out 1 forwards;
@@ -225,7 +222,6 @@ body::after {
     height: 100%;
     background: var(--bg-color);
 }
-
 .glitch::before{
     left :2px;
     text-shadow: -2px 0px var(--text-main);
@@ -458,4 +454,11 @@ input, textarea {
     .sky-stage { height: 100px; }
     .main-content { padding: 24px 16px; }
     .side-navbar { padding: 14px 16px; }
+}
+audio {
+    display: block !important;
+    width: 300px !important;
+    margin-top: 20px;
+    opacity: 1 !important;
+    visibility: visible !important;
 }
