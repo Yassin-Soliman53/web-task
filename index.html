@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Station 88.4 | Neon Corsair</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+
+        <aside class="side-navbar">
+            <div class="nav-top">
+                <h2>unknown frequency</h2>
+                <div class="nav-links">
+                    <a href="#broadcast">BROADCAST</a>
+                    <a href="#cards">ROGUE_DJs</a>
+                    <a href="#comms">ENCRYPTED_COMMS</a>
+                </div>
+            </div>
+
+            <div class="signal-toggle">
+                <p style="margin: 0; font-size: 1rem; color: var(--text-muted);">
+                    <span class="status-dot" id="statusDot"></span>
+                    <span id="statusText">Signal: UNKNOWN</span>
+                </p>
+                <p style="margin: 0; color: var(--text-muted); font-size: 0.8rem;">Altitude: 42,000ft</p>
+
+                <div class="toggle-label">SIGNAL MODE // UNDERGROUND</div>
+                <button class="switch-track" onclick="toggleSignalMode()" aria-label="Toggle dark underground signal or bright sanctioned feed">
+                    <div class="track-labels"><span>ENC</span><span>CORP</span></div>
+                    <div class="switch-thumb"> </div>
+                </button>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <section class="broadcast" id="broadcast">
+                <div class="sky-stage" aria-hidden="true">
+                    <svg class="air-ship" viewBox="0 0 220 90" xmlns="http://www.w3.org/2000/svg">
+                       <g class="align-vichle">
+                            <polygon points="0,45 60,38 60,52" fill="var(--neon-pink)" opacity="0.5"/>
+                            <polygon points="20,45 65,41 65,49" fill="var(--text-main)" opacity="0.3"/>
+                       </g>
+                       <ellipse cx="120" cy="40" rx="80" ry="25" fill="#111" stroke="var(--text-main)" stroke-width="2"/>
+                        <path d="M60,30 Q130,18 200,30" stroke="var(--neon-pink)" stroke-width="3" fill="none"/>
+                        <rect x="105" y="58" width="50" height="16" rx="4" fill="#000" stroke="var(--neon-amber)" stroke-width="1.5"/>
+                        <circle cx="118" cy="66" r="3" fill="var(--text-main)"/>
+                        <circle cx="132" cy="66" r="3" fill="var(--text-main)"/>
+                        <circle cx="146" cy="66" r="3" fill="var(--neon-pink)"/>
+                        <line x1="150" y1="18" x2="160" y2="4" stroke="var(--text-main)" stroke-width="2"/>
+                        <circle cx="160" cy="4" r="3" fill="var(--neon-pink)"/>
+                        <path d="M195,30 L215,18 L205,42 Z" fill="var(--neon-pink)" opacity="0.85"/>
+                    </svg>
+                </div>
+                <p style="color: var(--neon-pink); margin-bottom: 0;">&gt; INCOMING TRANSMISSION</p>
+                <center>
+                <h1 class="glitch" data-text="NEON Corsair">NEON CORSAIR</h1>
+                <p>Welcome to the Corsair. If you're picking up this frequency, the Enforcers haven't found our atmospheric rig yet. Keep your volume low and your signal encrypted. We play what they banned.</p>
+                </center>
+                <div class="glass-panel">
+                    <div style="position: relative;">
+                        <div class="audio-disc"></div>
+                        <div class="audio-center"></div>
+                    </div>
+                    <div class="player-info">
+                        <h3>live : sound of us</h3>
+                        <p style="margin-top: 0; font-size: 1rem;">are comming soon</p>
+                         <audio autoplay loop>
+                            <source src="leberch-space-ambient-509783.mp3">
+                        </audio>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cards" id="cards">
+                <div class="cards-wrap">
+
+                    <h2 style="text-align:center;">More about us</h2>
+
+                    <div class="container">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <h2>YASSO</h2>
+                                    <p>THE FOUNDER OF WHAT U R USING RN</p>
+                                    <p style="font-size: 1rem; color: grey;">Hover me</p>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h3>CRIMES</h3>
+                                    <p>STOLE THE MILITARY-GRADE AND THIS RADIO STATION</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <h2>CHOST</h2>
+                                    <p>U must donot know about him rn</p>
+                                    <p style="font-size: 1rem; color: gray;">HOVER ME</p>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h3>CRIMES</h3>
+                                    <p>WE PREFERE TO KEEP IT SECRET</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <h2>CHOST</h2>
+                                    <p>U must donot know about him rn</p>
+                                    <p style="font-size: 1rem; color: gray;">HOVER ME</p>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h3>CRIMES</h3>
+                                    <p>WE PREFERE TO KEEP IT SECRET</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="comms">
+                <h2>FEED BACK</h2>
+                <div class="comms-grid">
+                    <div class="form-section">
+                        <h3>DROP ME UR FEED BACK</h3>
+                        <form onsubmit="event.preventDefault();">
+                            <input type="text" placeholder="NAMW // Handle" required>
+                            <input type="text" placeholder="Encryption Key (Optional)">
+                            <textarea rows="4" placeholder="Message content" required></textarea>
+                            <button type="submit">TRANSMITION</button>
+                        </form>
+                    </div>
+                </div>
+
+                <center>
+                    <footer>
+                        <p style="font-size: large;">Designed by Yassin Soliman.<br> (c) 2026 UNKNOWN RADIO STATION</p>
+                    </footer>
+                </center>
+            </section>
+
+        </main>
+    </div>
+
+<script>
+function toggleSignalMode(){
+    const root = document.documentElement;
+    root.dataset.theme = root.dataset.theme === "light" ? "" : "light";
+}
+function updateNavSticky(){
+    const hero = document.getElementById('broadcast');
+    const nav = document.querySelector('.side-navbar');
+    if (!hero || !nav) return;
+
+    const heroHeight = hero.getBoundingClientRect().height;
+    const isNarrow = window.matchMedia('(max-width: 900px)').matches;
+
+    if (isNarrow){
+        nav.classList.toggle('pinned', window.scrollY > 20);
+        return;
+    }
+
+    nav.style.height = heroHeight + 'px';
+    nav.classList.toggle('pinned', window.scrollY > heroHeight - 40);
+}
+window.addEventListener('scroll', updateNavSticky, { passive: true });
+window.addEventListener('resize', updateNavSticky);
+window.addEventListener('load', updateNavSticky);
+document.addEventListener('DOMContentLoaded', updateNavSticky);
+</script>
+</body>
+</html>
