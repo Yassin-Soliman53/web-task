@@ -455,10 +455,4 @@ input, textarea {
     .main-content { padding: 24px 16px; }
     .side-navbar { padding: 14px 16px; }
 }
-audio {
-    display: block !important;
-    width: 300px !important;
-    margin-top: 20px;
-    opacity: 1 !important;
-    visibility: visible !important;
-}
+
